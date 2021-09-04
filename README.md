@@ -1,5 +1,5 @@
 # Thapar-E-Mart
-# Problem Statemen:-
+# Problem Statement:-
                    Student study materials such as book ,calculators .laptops etc are very expensive. Not only this ,some of these items would never be used again
                    by you in your life. These products increase the burden on the environment(if the go unchecked they will pollute the
 		  environment). A lot of resources are needed to recycle such gadgets. To save the already depleting resources, cut the waste generated
@@ -16,4 +16,10 @@
               bgupta1_be20@thapar.edu
               igupta1_be20@thapar.edu
               mgupta2_be20@thapar.edu
-              
+# To Use:-
+	Install Node.js and then write
+	npm install
+	in the terminal
+# To Run:-
+	write
+	npm run start
