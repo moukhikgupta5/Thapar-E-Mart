@@ -1,9 +1,9 @@
 # Thapar-E-Mart
 # Problem Statement:-
-                   Student study materials such as book ,calculators .laptops etc are very expensive. Not only this ,some of these items would never be used again
-                   by you in your life. These products increase the burden on the environment(if the go unchecked they will pollute the
-		  environment). A lot of resources are needed to recycle such gadgets. To save the already depleting resources, cut the waste generated
-		  and derease the initial cost of study materials we bring to an efficient and smart solution "Thapar E-mart".
+    Student study materials such as book ,calculators .laptops etc are very expensive. Not only this ,some of these items would never be used again
+    by you in your life. These products increase the burden on the environment(if the go unchecked they will pollute the environment). A lot
+    of resources are needed to recycle such gadgets. To save the already depleting resources, cut the waste generated and derease the initial cost
+    of study materials we bring to an efficient and smart solution "Thapar E-mart".
 # About Us :- 
               As students we need a lot of tools to work. Most of them aren't used again after the semester ends .Thapar E-mart
               provides you with the platform to buy and sell such products .You can list the items you want to sell, The buyer 
