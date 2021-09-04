@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Log In</title>
+  </head>
+  <body>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <div style="width: 700px; margin: 20px auto; margin-top: -100px; ">  
+    <div id="sawo-container" style="height: 700px; width: 300px; position: absolute; left: 500px;"></div>
+  </div>
+    <script src="http://websdk.sawolabs.com/sawo.min.js"></script>
+    <script>
+         // Fetching payload from sessionStorage
+        const payload = sessionStorage.getItem("payload");
+        if (payload) {
+            // If the payload is available, that means the user has logged in already.
+            // So redirecting back to "/login"
+            window.location.href = "/products/view";
+        }
+      var config = {
+
+        // should be same as the id of the container created on 3rd step
+        containerID: "sawo-container",
+
+        // can be one of 'email' or 'phone_number_sms'
+        identifierType: "phone_number_sms",
+
+        // Add the API key copied from 2nd step
+        apiKey: "132ac6ff-4d2b-4fe5-bc55-251abc02c9af",
+
+        // Add a callback here to handle the payload sent by sdk
+        onSuccess: (payload) => {
+            // Storing the payload in sessionStorage
+            sessionStorage.setItem("payload", JSON.stringify(payload));
+            //   console.log(payload.customFieldInputValues.Name);
+            //   console.log(payload.verification_token);
+            sessionStorage.setItem("userId", payload.user_id);
+            // sessionStorage.setItem("email", payload.identifier);
+            // sessionStorage.setItem("name", payload.customFieldInputValues.Name);
+            // const name = payload.customFieldInputValues.Name;
+            const phone = payload.identifier;
+            const userId = payload.user_id;
+            const name = payload.customFieldInputValues.Name;
+            const email = payload.customFieldInputValues.Thapar_Email_Id;
+            const age =  payload.customFieldInputValues.Age;
+            $(document).ready(function () {
+                $.post('/users/login',{ 
+                    "phone":`${phone}`,
+                    "userId":`${userId}`,
+                    "name":`${name}`, 
+                    "email":`${email}` ,
+                    "age":`${age}` 
+                  }
+                );
+                window.location.href = '/products/view';
+            });
+            // Redirecting to "/success"
+            // setTimeout(function () {
+            //     window.location.href = "/dashboard";
+            // }, 1000);
+        },
+      };
+      var sawo = new Sawo(config);
+      sawo.showForm();
+    </script>
+  </body>
+</html>

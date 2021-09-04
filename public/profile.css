@@ -1,0 +1,90 @@
+.header {
+    margin: auto;
+    top: 16px;
+    width: 163px;
+    height: 68px;
+    overflow: hidden;
+    font-family: Stolzl Display;
+    font-size: 36px;
+    color: #161616;
+    text-align: center;
+}
+
+body {
+    align-content: center;
+}
+
+.person {
+    margin: 0 auto;
+    float: center;
+    position: relative;
+    width: 163px;
+    right: 200px;
+    left: 44%;
+    height: 100%;
+}
+
+.top_right {
+    /* height: 300px;
+    width: auto; */
+    margin: auto;
+    position: relative;
+    margin-left: 813px;
+    bottom: 270px;
+}
+.centered {
+    position: absolute;
+     left: 1219px;
+     z-index: 1;
+     margin-left: -140px;
+     margin-top: -590px;
+  }
+  .logout{
+    background-color: #8c30f5;
+    border: 10 solid black;
+    color: white;
+    font-weight: bold;
+  }
+  
+.info {
+    display: flex;
+    flex-wrap: wrap;
+    /* left: 10px;
+    right: 20px; */
+    /* margin: 20px, 20px, 20px, 20px; */
+    /* padding-left: 250px;
+    padding-right: 250px;
+    top: 800px; */
+    /* bottom: 100px; */
+    margin-top: -350px;
+    /* margin-left: 270px; */
+    margin-bottom: 20px;
+    padding-block: 10px;
+    justify-content: space-between;
+}
+
+.details {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    /* margin-left: 200px; */
+    justify-content: space-between;
+}
+
+.press {
+    margin: 0 auto;
+    margin-left: 580px;
+    margin-top: 10px;
+}
+
+#clik {
+    background-color: #5d5fef;
+    border-radius: 15px;
+    width: 100px;
+    padding-top: 10;
+    color: white;
+}
+
+hr {
+    margin-top: -30px;
+}
