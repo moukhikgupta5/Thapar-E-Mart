@@ -17,9 +17,13 @@
               igupta1_be20@thapar.edu
               mgupta2_be20@thapar.edu
 # To Use:-
-	Install Node.js and then write
+	Install Node.js and then type:
 	npm install
 	in the terminal
 # To Run:-
-	write
+	type:
 	npm run start
+	in the terminal
+	Now type:
+	localhost:6500
+	in the browser
