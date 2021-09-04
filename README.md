@@ -1,5 +1,6 @@
 # Thapar-E-Mart
-Problem Statement:-Student study materials such as book ,calculators .laptops etc. Not only some this some of these items would never be used again
+# Problem Statemen:-
+                   Student study materials such as book ,calculators .laptops etc. Not only some this some of these items would never be used again
                    by you in your life. These products increase the burden on the environment(if the go unchecked they will pollute the
 		  environment). A lot of resources are needed to recycle such gadgets. To save the already depleting resources, cut the waste generated
 		  and derease the initial cost of study materials we bring to an efficient and smart solution "Thapar E-mart".
