@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  
+  <link rel="stylesheet" href="/product-description.css">
+</head>
+<body>
+  
+  <div class="topnav">
+    <a class="active" href="/products/view">Home</a>
+    <a href="/about-us">About</a>
+    <a href="/contact-us">Contact</a>
+    <!-- <input type="text" placeholder="Search.."> -->
+  </div>
+
+
+
+  <div class="boxes">
+    <div class="box1">
+      <img src="/uploads/2021-09-04T19-23-51.628ZWhatsAppImage2021-09-04at10.13.01PM.jpeg" >
+    </div>
+    <div class="box2">
+  <img src="/uploads/2021-09-04T19-23-51.631ZWhatsAppImage2021-09-04at10.13.15PM.jpeg" alt="">
+
+    </div>
+    <div class="box3">
+      <img src="/uploads/2021-09-04T19-23-51.633ZWhatsAppImage2021-09-04at10.13.59PM.jpeg" alt="">
+    </div>
+    <div class="box4">
+      <img src="/uploads/2021-09-04T19-23-51.635ZWhatsAppImage2021-09-04at10.14.07PM.jpeg" alt="">
+    </div>
+  </div>
+
+      <div class="written">
+        <h1><%= product.name %> </h1>
+        <p><%= product.description %> </p>
+        <h2><%= product.price %> </h2>
+        
+        <a href="mailto:<%- email %> ">
+        <button><b>Mail to the User</b></button>
+        </a>
+      </div>
+
+</body>
+</html>
