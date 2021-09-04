@@ -69,7 +69,7 @@ router.post('/sell/:id', upload.array('uploadedImages', 4), async (req, res) => 
     //   console.log(desc);
     //   console.log(file);
     console.log(newPro);
-    res.send('Testing');
+    res.redirect('/products/view');
 });
 
 router.get('/view', async (req, res) => {
